@@ -15,7 +15,7 @@ wget https://git.io/JIume --no-check-certificate -O ocservauto.sh
 bash ocservauto.sh
 ```
 
-restart  
+Restart  
 ```
 /etc/init.d/ocserv restart  #when the Profiles(/etc/ocserv/) is changed 
 ```
