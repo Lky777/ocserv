@@ -15,9 +15,9 @@ wget https://git.io/JIume --no-check-certificate -O ocservauto.sh
 bash ocservauto.sh
 ```
 
-restart the vpn server if the Profiles(/etc/ocserv/) was changed  
+restart  
 ```
-/etc/init.d/ocserv restart
+/etc/init.d/ocserv restart  #when the Profiles(/etc/ocserv/) is changed 
 ```
 
 Help  
