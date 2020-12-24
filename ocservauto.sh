@@ -604,8 +604,8 @@ _EOF_
 #modify config file 设定相关参数
 function set_ocserv_conf(){
 #default vars
-    ocserv_tcpport_set=${ocserv_tcpport_set:-999}
-    ocserv_udpport_set=${ocserv_udpport_set:-1999}
+    ocserv_tcpport_set=${ocserv_tcpport_set:-9999}
+    ocserv_udpport_set=${ocserv_udpport_set:-9999}
     save_user_vars=${save_user_vars:-n}
     ocserv_boot_start=${ocserv_boot_start:-y}
     only_tcp_port=${only_tcp_port:-n}
