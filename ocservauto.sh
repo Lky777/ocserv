@@ -313,12 +313,12 @@ function get_Custom_configuration_2(){
         fast_Default_Ask "$OC_version_latest is the latest,but default version is recommended.Which to choose?" "$Default_oc_version" "oc_version"
     }
 #which port to use for verification 选择验证端口
-    fast_Default_Ask "Which port to use for verification?(Tcp-Port)" "8080" "ocserv_tcpport_set"
+    fast_Default_Ask "Which port to use for verification?(Tcp-Port)" "9999" "ocserv_tcpport_set"
 #tcp-port only or not 是否仅仅使用tcp端口，即是否禁用udp
     fast_Default_Ask "Only use tcp-port or not?(y/n)" "n" "only_tcp_port"
 #which port to use for data transmission 选择udp端口 即专用数据传输的udp端口
     if [ "$only_tcp_port" = "n" ]; then
-        fast_Default_Ask "Which port to use for data transmission?(Udp-Port)" "8080" "ocserv_udpport_set"
+        fast_Default_Ask "Which port to use for data transmission?(Udp-Port)" "9999" "ocserv_udpport_set"
     fi
 #boot from the start 是否开机自起
     fast_Default_Ask "Start ocserv when system is started?(y/n)" "y" "ocserv_boot_start"
@@ -452,7 +452,7 @@ function tar_ocserv_install(){
     oc_version=${oc_version:-${Default_oc_version}}
     [ "$OC_version_latest" = "" ] && {
 #可以换成自己的下载地址
-        oc_version='1.1.1'
+        oc_version='1.1.2'
         curl -SOL "https://www.github.com/Lky777/resources/raw/main/ocserv/ocserv-$oc_version.tar.xz"
     } || {
         wget -c ftp://ftp.infradead.org/pub/ocserv/ocserv-$oc_version.tar.xz
@@ -604,8 +604,8 @@ _EOF_
 #modify config file 设定相关参数
 function set_ocserv_conf(){
 #default vars
-    ocserv_tcpport_set=${ocserv_tcpport_set:-8080}
-    ocserv_udpport_set=${ocserv_udpport_set:-8080}
+    ocserv_tcpport_set=${ocserv_tcpport_set:-9999}
+    ocserv_udpport_set=${ocserv_udpport_set:-9999}
     save_user_vars=${save_user_vars:-n}
     ocserv_boot_start=${ocserv_boot_start:-y}
     only_tcp_port=${only_tcp_port:-n}
@@ -963,7 +963,7 @@ echo "==========================================================================
 #如果fork的话，请修改为自己的网络地址
 NET_OC_CONF_DOC="https://raw.githubusercontent.com/Lky777/ocserv/main"
 #推荐的默认版本
-Default_oc_version="1.1.1"
+Default_oc_version="1.1.2"
 #开启分组模式，每位用户都会分配到All组和Route组。
 #All走全局，Route将会绕过大陆。
 #证书以及用户名登录都会采取。
