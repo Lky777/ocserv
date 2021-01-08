@@ -1,7 +1,7 @@
 ## ocserv  
  
 ▸ 👾Debian 10.2✓(09 Dec 2020)  
-▸   Ubuntu Server 20.04 LTS 64bit✓(08 Jan 2021)  
+    Ubuntu Server 20.04 LTS 64bit✓(08 Jan 2021)  
 ▸ 🐮Debian 11?  
 ▸ 🐛Debian 12?  
 This script still has some annoying bugs.I'll fix it in my spare time.  
