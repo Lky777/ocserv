@@ -418,11 +418,14 @@ function pre_install(){
     [ ! -d /etc/apt/sources.list.d ] && mkdir /etc/apt/sources.list.d    
     cat > /etc/apt/preferences.d/my_ocserv_preferences<<'EOF'
 Package: *
-Pin: release wheezy
-Pin-Priority: 900
+Pin: release a=stable
+Pin-Priority: 700
 Package: *
-Pin: release wheezy-backports
-Pin-Priority: 90
+Pin: release a=testing
+Pin-Priority: 650
+Package: *
+Pin: release a=unstable
+Pin-Priority: 600
 EOF
     cat > /etc/apt/apt.conf.d/77ocserv<<'EOF'
 APT::Install-Recommends "false";
@@ -931,7 +934,6 @@ function surport_Syscodename(){
     [ "$oc_D_V" = "bookworm" ] && return 0
     [ "$oc_D_V" = "buster" ] && return 0
     [ "$oc_D_V" = "stretch" ] && return 0
-    [ "$oc_D_V" = "wheezy" ] && return 0
     [ "$oc_D_V" = "focal" ] && return 0
     [ "$oc_D_V" = "bionic" ] && return 0
     #TEST NEWER SYS 测试新系统，取消下面一行的注释。

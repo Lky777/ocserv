@@ -4,7 +4,7 @@
 OCSERV_CONFIG="/etc/ocserv/ocserv.conf"
 
 # turn on IP forwarding
-#sysctl -w net.ipv6.conf.all.forwarding=1 > /dev/null 2>&1
+sysctl -w net.ipv6.conf.all.forwarding=1 > /dev/null 2>&1
 sysctl -w net.ipv4.ip_forward=1 > /dev/null 2>&1
 
 #get gateway and profiles

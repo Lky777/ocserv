@@ -1,7 +1,6 @@
 ## ocserv  
  
 ▸ 👾Debian 10.2✓(09 Dec 2020)  
-&emsp;&emsp;&ensp;Ubuntu Server 20.04 LTS 64bit✓(08 Jan 2021)  
 ▸ 🐮Debian 11?  
 ▸ 🐛Debian 12?  
 This script still has some annoying bugs.I'll fix it in my spare time.  
@@ -16,9 +15,11 @@ wget https://git.io/JIume --no-check-certificate -O ocservauto.sh
 bash ocservauto.sh
 ```
 
-Restart  
+Profiles in /etc/ocserv/  
+
+When you change the profiles, restart the vpn server.  
 ```
-/etc/init.d/ocserv restart  #when the Profiles(/etc/ocserv/) is changed 
+/etc/init.d/ocserv restart
 ```
 
 Help  
