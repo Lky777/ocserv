@@ -1,0 +1,163 @@
+[Adblock Plus 3.0]
+! Title: 🐾ShadowCat (zh)
+! Description: Supplemental filters for Chinese mobile sites
+! Version: 20220822b
+! Last modified: 22 Aug 2022 UTC
+! Expires: 31 days
+! Homepage: https://github.com/Lky777/MWCP
+! Checksum: 
+! Licence: 
+
+!-------- 🐾Big Adsense --------
+! 360
+||p*.qhimg.com^
+! ALIBABA
+||38qptu4.oss-cn-hangzhou.aliyuncs.com^
+||xpjtu7.oss-cn-hangzhou.aliyuncs.com^
+! BAIDU
+||*.bcebos.com^
+||hpd.baidu.com^
+||msite.baidu.com^
+||rmb.bdstatic.com^
+||sp1.baidu.com^
+||tb3.bdstatic.com/radar-sdk/
+! BYTEDANCE
+||p1.bdxiguaimg.com^
+||p3.toutiaoimg.com/img/
+! GOOGLE
+||fonts.g*.com^
+||googlesyndication.com^
+||googletagmanager.com^
+||lh*.googleusercontent.com/proxy/
+||m.youtube.com/static/r/
+! SOGOU
+||img04.sogoucdn.com^
+! OTHERS
+||cnzz.com^
+
+!-------- 🐾General --------
+!
+_banner
+||static.*.com^
+! 191FUN.com
+||m.191fun.com/uploadfile/dip/*.gif
+! DDXS.com
+||*.biquge-app.com/apps/
+! GAMERSKY.com
+||cm1.gamersky.com/apirating/
+||db5.gamersky.com^
+||image.gamersky.com/webimg13/wap/2021/APP-ICON@3x.png
+||j.gamersky.com/app/js/
+||j.gamersky.com/wap/js/gs/
+||yeyou-cps.gamersky.com^
+! HAOBIQUGE.com
+||goodtj.xyz^
+! LANZOUL.com
+||woozooo.com^
+! MANMANJU.com
+||m.manmanju.com/mg/show2.js
+! MIKECRM.com
+||cdnq3.mikecrm.com/cdn/ugc_8_a/pub/qw/*/form/image/*.jpg
+! MYDRIVER.com
+_720.gif
+! PROXYRARBG.org
+||cloudflareinsights.com^
+! QQSZZ.com
+||www.qqszz.com/wp-content/uploads/2021/01/2021011511533373.png
+! QWANT.com
+||qwant.com/en.5c248bbd.svg
+! TXRJY.com
+||txrjy.com/static/js/zepto.min.js
+! USERUPLOAD.net
+||doflygonan.com^
+||platform-api.sharethis.com^
+||tgwidget.com^
+! WEEKENDHK.com
+||www.weekendhk.com/wp-content/themes/bucket/theme-content/images/
+! WXSY.net
+||exevcl.cn^
+||nsj666.cn^
+! XDA-DEVELOPERS.com
+||xda-developers.com^$3p
+! YINGXS.com
+||m.yingsx.com/6W3n6xwL/
+! YHDMP.live
+||nmkstcrt.xyz^
+! ZHIHU.com
+||static.zhihu.com/heifetz/column.GoodsRecommendGoodsCardList.*.js
+@@||static.zhihu.com^
+
+! Annoying Elements
+163.com##.js-backflow-floating.backflow-floating
+163.com##.js-open-app.backflow-floating
+18comic.org,18comic.vip,jmcomic.asia##.modal-body
+aliyun.com##.app-fixed-btn
+juicywest.com##+js(aopr, __Y)
+baidu.com,bdimg.com,tieba.baidu.com##.nav-bar-bottom
+ceveysystemsna.com###overlay-ad
+csdn.net##.open_app_channelCode.feed-Sign-span
+ddxs.com##div[class="RMss1"]
+ddxs.com##div[class="W1oMwlglisten"]
+ddxs.com##div[class="W1oMwlgani"]
+gamer.com.tw##.open-app
+hk01.com###branch-banner-iframe
+txrjy.com##.is-shown.OpenInAppButton
+wallstreetcn.com##.open-in-app
+xbiquge.so##.W1oMwlgbar
+xbiquge.so##.zw1ljPz
+zhihu.com##.css-121zbv8.Button
+zhihu.com##.css-rgo48u
+zhihu.com##.css-w0t7t0.Button
+
+!-------- 🐾Adults --------
+-mod1.gif
+/images/friend/*
+/images/content/spot01.jpg$domain=yingav.com|yingav2.com
+/static/resources/$domain=18comic.org|18comic.vip|jmcomic.asia
+||21319331.com^
+||3338632.com^
+||33687151.com^
+||6745jj.com^
+||884121.com^
+||885422.com^
+||9820668.com^
+||abcm3i67y22.com^
+||apain2.com^
+||auwrtou.cn^
+||cdn.bncloudfl.com^
+||cdn.jsjsjs.xyz/happy/newyear/
+||dapai77.top^
+||di.phncdn.com^
+||dimg04.c-ctrip.com^
+||geobanner.getiton.com^
+||ggsfq.com^
+||img.strpst.com^
+||img*.360buyimg.com^
+||jcyunk2.com^
+||jsoctn9.com^
+||jtrgzj9.com^
+||knet.cn^
+||kvhss.top^
+||kzecc.com^
+||n0*.com^
+||othbhe2.com^
+||p.91hs005.xyz/pic/
+||p.bigcloud.cyou/*.gif
+||p1.eckwai.com^
+||pic.81image.com^
+||pic.picnewsss.com^
+||pic.abgdh.com^
+||qthynj2.com^
+||rb1991.com/fc/*.gif
+||sese211.info/photo/*.gif
+||ssp666.xyz/images/*.gif
+||static01.xyz^
+||traffichaus.com^
+||trxxkie.cc^
+||u00*.com^
+||unpfqc9.com^
+||webs*.*.xyz^
+||xbluntanq.life^
+||xlviirdr.com^
+||xox8829.com^
+||zurftr8.com^
