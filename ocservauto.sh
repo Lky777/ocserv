@@ -2,7 +2,7 @@
 
 #===============================================================================================
 #   System Required:  Debian 10+
-#   Date: 09 Dec 2020
+#   Date: 08 Feb 2023
 #===============================================================================================
 
 ###################################################################################################################
@@ -248,7 +248,7 @@ function check_Required(){
     apt-get install sudo
     check_install "curl vim gawk sed insserv nano" "curl vim gawk sed insserv nano"
     check_install "dig lsb_release" "dnsutils lsb-release"
-    insserv -s  > /dev/null 2>&1 || ln -s /usr/lib/insserv/insserv /sbin/insserv
+    insserv -s  > /dev/null 2>&1 || ln -sf /usr/lib/insserv/insserv /sbin/insserv
     print_info "Get base-tools ok"
 #only Debian 10+
     surport_Syscodename || die "Sorry, This system has not been tested."
@@ -455,7 +455,7 @@ function tar_ocserv_install(){
     oc_version=${oc_version:-${Default_oc_version}}
     [ "$OC_version_latest" = "" ] && {
 #可以换成自己的下载地址
-        oc_version='1.1.2'
+        oc_version='1.1.6'
         curl -SOL "https://www.github.com/Lky777/resources/raw/main/ocserv/ocserv-$oc_version.tar.xz"
     } || {
         wget -c ftp://ftp.infradead.org/pub/ocserv/ocserv-$oc_version.tar.xz
@@ -932,6 +932,7 @@ function enable_bbr() {
 function surport_Syscodename(){
     oc_D_V=$(lsb_release -c -s)
     [ "$oc_D_V" = "bookworm" ] && return 0
+    [ "$oc_D_V" = "bullseye" ] && return 0
     [ "$oc_D_V" = "buster" ] && return 0
     [ "$oc_D_V" = "stretch" ] && return 0
     [ "$oc_D_V" = "focal" ] && return 0
@@ -965,7 +966,7 @@ echo "==========================================================================
 #如果fork的话，请修改为自己的网络地址
 NET_OC_CONF_DOC="https://raw.githubusercontent.com/Lky777/ocserv/main"
 #推荐的默认版本
-Default_oc_version="1.1.2"
+Default_oc_version="1.1.6"
 #开启分组模式，每位用户都会分配到All组和Route组。
 #All走全局，Route将会绕过大陆。
 #证书以及用户名登录都会采取。

@@ -1,7 +1,7 @@
 ## ocserv  
  
+▸ 🐮Debian 11.6✓(08 Feb 2023)  
 ▸ 👾Debian 10.2✓(09 Dec 2020)  
-▸ 🐮Debian 11?  
 ▸ 🐛Debian 12?  
 This script still has some annoying bugs.I'll fix it in my spare time.  
 

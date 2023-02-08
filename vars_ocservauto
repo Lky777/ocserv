@@ -17,7 +17,7 @@ ocserv_boot_start='y'
 #证书登录，否则用户名密码登录
 ca_login='n'
 #安装版本
-oc_version='1.1.2'
+oc_version='1.1.6'
 #是否保存本配置文件
 save_user_vars='y'
 #初始用户名密码
